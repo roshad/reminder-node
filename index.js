@@ -9,7 +9,7 @@ const repeat = () => {
     actions:[1, 10,30],
   },  function (error, response, metadata) {
     interval=new Number(response)!=NaN?response:1/6;
-   console.log("set interval",interval,"min");
+   console.log(new Date(),"set interval",interval,"min");
     setTimeout(repeat, interval*60*1000);
   });
 
